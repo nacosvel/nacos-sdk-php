@@ -6,23 +6,30 @@
         "nacos client",
         "nacos-sdk-php"
     ],
+    "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "jundayw",
             "email": "jundayw@126.com"
         }
     ],
-    "type": "library",
     "require": {
         "php": ">=8.0",
         "nacosvel/open-http": "^1.4",
         "psr/log": "^1.0|^2.0|^3.0",
         "symfony/cache": "^6.0"
     },
-    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Nacosvel\\Nacos\\": "src/"
         }
-    }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.x-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
